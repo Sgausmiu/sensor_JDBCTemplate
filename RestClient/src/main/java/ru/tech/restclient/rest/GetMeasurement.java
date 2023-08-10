@@ -21,7 +21,4 @@ public class GetMeasurement {
         System.out.println((objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(getMeasurementFromServer)));
         return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(getMeasurementFromServer);
     }
-
-
-
 }

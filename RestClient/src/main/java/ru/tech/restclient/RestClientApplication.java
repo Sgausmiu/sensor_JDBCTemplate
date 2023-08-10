@@ -20,7 +20,7 @@ public class RestClientApplication {
 
     public static void main(String[] args) throws JsonProcessingException {
 
-        final String deviceName = "Sensor_62";
+        final String deviceName = "Sensor_63";
         saveSensor(deviceName);
 
         Random random = new Random();
