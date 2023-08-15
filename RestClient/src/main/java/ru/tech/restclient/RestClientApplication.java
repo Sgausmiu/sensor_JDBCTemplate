@@ -1,13 +1,13 @@
-package ru.tech.restclient;
+package main.java.ru.tech.restclient;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import main.java.ru.tech.restclient.rest.GetMeasurement;
+import main.java.ru.tech.sensorOverDAO.dto.MeasurementDTO;
+import main.java.ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
-import ru.tech.restclient.rest.GetMeasurement;
-import ru.tech.sensorOverDAO.dto.MeasurementDTO;
-import ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ public class RestClientApplication {
 
     public static void main(String[] args) throws JsonProcessingException {
 
-        final String deviceName = "Sensor_63";
+        final String deviceName = "Sensor_66";
         saveSensor(deviceName);
 
         Random random = new Random();

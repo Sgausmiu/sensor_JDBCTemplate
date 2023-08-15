@@ -1,5 +1,7 @@
-package ru.tech.restclient.dto;
+package main.java.ru.tech.restclient.dto;
 
+
+import main.java.ru.tech.sensorOverDAO.dto.SensorDTO;
 
 import java.time.LocalDateTime;
 

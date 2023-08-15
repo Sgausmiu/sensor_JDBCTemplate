@@ -1,6 +1,11 @@
-package ru.tech.sensorOverDAO.controllers;
+package main.java.ru.tech.sensorOverDAO.controllers;
 
 import jakarta.validation.Valid;
+import main.java.ru.tech.sensorOverDAO.dao.MeasurementDAOImpl;
+import main.java.ru.tech.sensorOverDAO.dto.MeasurementDTO;
+import main.java.ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
+import main.java.ru.tech.sensorOverDAO.models.Measurement;
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,11 +13,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-import ru.tech.sensorOverDAO.dao.MeasurementDAOImpl;
-import ru.tech.sensorOverDAO.dto.MeasurementDTO;
-import ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
-import ru.tech.sensorOverDAO.models.Measurement;
-import ru.tech.sensorOverDAO.models.Sensor;
 
 import java.time.LocalDateTime;
 import java.util.List;

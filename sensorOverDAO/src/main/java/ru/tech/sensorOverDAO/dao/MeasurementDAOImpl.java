@@ -1,17 +1,17 @@
-package ru.tech.sensorOverDAO.dao;
+package main.java.ru.tech.sensorOverDAO.dao;
 
+import main.java.ru.tech.sensorOverDAO.models.Measurement;
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.tech.sensorOverDAO.models.Measurement;
-import ru.tech.sensorOverDAO.models.Sensor;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
 @Component
-public class MeasurementDAOImpl implements MeasurementDAO{
+public class MeasurementDAOImpl implements MeasurementDAO {
     private final JdbcTemplate jdbcTemplate;
 
     @Autowired

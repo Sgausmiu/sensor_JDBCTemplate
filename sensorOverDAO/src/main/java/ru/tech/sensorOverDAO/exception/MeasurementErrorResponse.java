@@ -1,4 +1,4 @@
-package ru.tech.sensorOverDAO.exception;
+package main.java.ru.tech.sensorOverDAO.exception;
 
 import lombok.Data;
 

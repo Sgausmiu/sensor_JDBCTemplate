@@ -1,15 +1,15 @@
-package ru.tech.sensorOverDAO.dao;
+package main.java.ru.tech.sensorOverDAO.dao;
 
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import ru.tech.sensorOverDAO.models.Sensor;
 
 import java.util.List;
 import java.util.Optional;
 
 @Component
-public class SensorDAOImpl implements SensorDAO{
+public class SensorDAOImpl implements SensorDAO {
 
     private final JdbcTemplate jdbcTemplate;
 

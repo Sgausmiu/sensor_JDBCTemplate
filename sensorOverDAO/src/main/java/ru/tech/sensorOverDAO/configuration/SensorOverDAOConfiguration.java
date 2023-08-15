@@ -1,4 +1,4 @@
-package ru.tech.sensorOverDAO.configuration;
+package main.java.ru.tech.sensorOverDAO.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

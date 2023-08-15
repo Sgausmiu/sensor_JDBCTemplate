@@ -1,8 +1,8 @@
-package ru.tech.sensorOverDAO.dto;
+package main.java.ru.tech.sensorOverDAO.dto;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import ru.tech.sensorOverDAO.models.Sensor;
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
 
 import java.time.LocalDateTime;
 

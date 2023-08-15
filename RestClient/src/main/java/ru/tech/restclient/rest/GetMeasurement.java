@@ -1,9 +1,9 @@
-package ru.tech.restclient.rest;
+package main.java.ru.tech.restclient.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import main.java.ru.tech.restclient.dto.MeasurementDTOList;
 import org.springframework.web.client.RestTemplate;
-import ru.tech.restclient.dto.MeasurementDTOList;
 
 import java.util.ArrayList;
 import java.util.List;

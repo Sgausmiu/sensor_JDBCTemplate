@@ -1,4 +1,4 @@
-package ru.tech.sensorOverDAO;
+package main.java.ru.tech.sensorOverDAO;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,13 +1,13 @@
-package ru.tech.restclient.exception;
+package main.java.ru.tech.restclient.exception;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 @Getter
-public class SendMeasurmentException extends RuntimeException{
+public class SendMeasurementException extends RuntimeException{
     private HttpStatus httpStatus;
 
-    public SendMeasurmentException(HttpStatus httpStatus) {
+    public SendMeasurementException(HttpStatus httpStatus) {
         super("Неверные параметры отправки измерения" + httpStatus);
         this.httpStatus = httpStatus;
 

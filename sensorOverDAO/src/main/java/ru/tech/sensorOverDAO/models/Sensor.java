@@ -1,4 +1,4 @@
-package ru.tech.sensorOverDAO.models;
+package main.java.ru.tech.sensorOverDAO.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

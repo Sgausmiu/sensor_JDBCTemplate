@@ -1,4 +1,4 @@
-package ru.tech.sensorOverDAO.dto;
+package main.java.ru.tech.sensorOverDAO.dto;
 
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;

@@ -1,6 +1,13 @@
-package ru.tech.sensorOverDAO.controllers;
+package main.java.ru.tech.sensorOverDAO.controllers;
 
 import jakarta.validation.Valid;
+import main.java.ru.tech.sensorOverDAO.dao.SensorDAOImpl;
+import main.java.ru.tech.sensorOverDAO.dto.SensorDTO;
+import main.java.ru.tech.sensorOverDAO.exception.MeasurementErrorResponse;
+import main.java.ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
+import main.java.ru.tech.sensorOverDAO.exception.SensorNotFoundException;
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
+import main.java.ru.tech.sensorOverDAO.utils.SensorValidator;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,13 +15,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-import ru.tech.sensorOverDAO.dao.SensorDAOImpl;
-import ru.tech.sensorOverDAO.dto.SensorDTO;
-import ru.tech.sensorOverDAO.exception.MeasurementErrorResponse;
-import ru.tech.sensorOverDAO.exception.MeasurementNotAddedException;
-import ru.tech.sensorOverDAO.exception.SensorNotFoundException;
-import ru.tech.sensorOverDAO.models.Sensor;
-import ru.tech.sensorOverDAO.utils.SensorValidator;
 
 import java.util.List;
 import java.util.stream.Collectors;

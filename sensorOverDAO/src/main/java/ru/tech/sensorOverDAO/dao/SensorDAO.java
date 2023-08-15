@@ -1,6 +1,6 @@
-package ru.tech.sensorOverDAO.dao;
+package main.java.ru.tech.sensorOverDAO.dao;
 
-import ru.tech.sensorOverDAO.models.Sensor;
+import main.java.ru.tech.sensorOverDAO.models.Sensor;
 
 import java.util.List;
 import java.util.Optional;
