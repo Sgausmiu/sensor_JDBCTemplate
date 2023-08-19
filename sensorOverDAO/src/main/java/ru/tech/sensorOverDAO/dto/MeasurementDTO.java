@@ -10,10 +10,8 @@ public class MeasurementDTO {
     @NotNull
     @Size(min = -100, max = 100, message = "Диапазон значенией от -100 до +100 градусов")
     private Double value;
-
     @NotNull
     private Boolean isRaining;
-
     @NotNull
     private Sensor sensor;
     @NotNull
@@ -34,7 +32,6 @@ public class MeasurementDTO {
         this.isRaining = raining;
         return raining;
     }
-
     public Sensor getSensor() {
         return sensor;
     }

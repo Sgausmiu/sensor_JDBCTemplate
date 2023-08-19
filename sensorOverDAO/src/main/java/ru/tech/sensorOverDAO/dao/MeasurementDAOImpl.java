@@ -45,18 +45,19 @@ public class MeasurementDAOImpl implements MeasurementDAO {
         measurement.setRaining(resultSet.getBoolean("raining"));
         measurement.setLocalResolutionTime(resultSet.getTimestamp("local_resolution_time").toLocalDateTime());
         // Fetch the Sensor entity using nested query
-        Sensor sensor = getSensorById(resultSet.getInt("id"));
+        Sensor sensor = getSensorById(resultSet.getString("sensor"));
         measurement.setSensor(sensor);
 
         return measurement;
     }
 
 
-    private Sensor getSensorById(Integer id){
-        return jdbcTemplate.queryForObject("SELECT * from measurement WHERE id=?", new Object[]{id}, (resultSet, rowNum) -> {
+    private Sensor getSensorById(String name){
+        return jdbcTemplate.queryForObject("SELECT * from sensor WHERE name=?", new Object[]{name}, (resultSet, rowNum) -> {
             Sensor sensor = new Sensor();
             sensor.setId(resultSet.getInt("id"));
-
+            sensor.setName(resultSet.getString("name"));
+            // Set other properties of Sensor entity if needed
             return sensor;
         });
     }

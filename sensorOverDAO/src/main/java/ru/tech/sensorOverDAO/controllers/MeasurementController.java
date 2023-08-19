@@ -24,12 +24,9 @@ public class MeasurementController {
 
     private final MeasurementDAOImpl measurementDAOImpl;
 
-    private final ModelMapper modelMapper;
-
     @Autowired
     public MeasurementController(MeasurementDAOImpl measurementDAOImpl, ModelMapper modelMapper) {
         this.measurementDAOImpl = measurementDAOImpl;
-        this.modelMapper = modelMapper;
     }
 
     @PostMapping("/add")
